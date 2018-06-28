@@ -6,9 +6,9 @@
         3607,
         2747
       ],
-      "tensorPath": "http://aegean.sns.it/ts/uk_china_tensor.tsv",
-      "metadataPath": "http://aegean.sns.it/ts/uk_china_meta.tsv",
-      "bookmarksPath": "http://aegean.sns.it/ts/state.sdx"
+      "tensorPath": "https://raw.githubusercontent.com/dlicari/tensorflow/master/uk_china_tensor.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/dlicari/tensorflow/master/uk_china_meta.tsv",
+      "bookmarksPath": "https://raw.githubusercontent.com/dlicari/tensorflow/master/state.sdx"
 
     }
   ]
