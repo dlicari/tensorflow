@@ -1,0 +1,15 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "My tensor",
+      "tensorShape": [
+        3607,
+        2747
+      ],
+      "tensorPath": "http://aegean.sns.it/ts/uk_china_tensor.tsv",
+      "metadataPath": "http://aegean.sns.it/ts/uk_china_meta.tsv",
+      "bookmarksPath": "http://aegean.sns.it/ts/state.sdx"
+
+    }
+  ]
+}
