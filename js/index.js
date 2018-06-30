@@ -86,7 +86,7 @@ var node = svg.selectAll("circle.node")
             .duration(250)
             .style("cursor", "none")
             .attr("r", circleWidth+3)
-            .attr("fill",palette.orange);
+//            .attr("fill",palette.orange);
 
             //TEXT
             d3.select(this).select("text")
@@ -115,7 +115,7 @@ var node = svg.selectAll("circle.node")
             .transition()
             .duration(250)
             .attr("r", circleWidth)
-            .attr("fill",palette.pink);
+//            .attr("fill",palette.pink);
 
             //TEXT
             d3.select(this).select("text")
@@ -135,7 +135,7 @@ node.append("svg:circle")
   .attr("cx", function(d) { return d.x; })
   .attr("cy", function(d) { return d.y; })
   .attr("r", circleWidth)
-  .attr("fill", function(d, i) { if (i>0) { return  palette.pink; } else { return palette.lightgray } } )
+  .attr("fill", function(d, i) { if (i>0) { return colors[i] } else { return palette.paleryellow } } )
 
 //TEXT
 node.append("text")
@@ -143,7 +143,7 @@ node.append("text")
 .attr("x",    function(d, i) { return circleWidth + 5; })
   .attr("y",            function(d, i) { if (i>0) { return circleWidth + 0 }    else { return 8 } })
   .attr("font-family",  "Bree Serif")
-  .attr("fill",         function(d, i) {  return  palette.gray;  })
+  .attr("fill",         function(d, i) {  return  palette.lightgray;  })
   .attr("font-size",    function(d, i) {  return  (fontSizeNormal/scale)+'em'; })
   .attr("text-anchor",  function(d, i) { if
   (i>0) { return  "beginning"; }      else { return "end" } })
