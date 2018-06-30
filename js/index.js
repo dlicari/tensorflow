@@ -135,7 +135,7 @@ node.append("svg:circle")
   .attr("cx", function(d) { return d.x; })
   .attr("cy", function(d) { return d.y; })
   .attr("r", circleWidth)
-  .attr("fill", function(d, i) { if (i>0) { return  palette.pink; } else { return palette.paleryellow } } )
+  .attr("fill", function(d, i) { if (i>0) { return  palette.pink; } else { return palette.lightgray } } )
 
 //TEXT
 node.append("text")
@@ -143,7 +143,7 @@ node.append("text")
 .attr("x",    function(d, i) { return circleWidth + 5; })
   .attr("y",            function(d, i) { if (i>0) { return circleWidth + 0 }    else { return 8 } })
   .attr("font-family",  "Bree Serif")
-  .attr("fill",         function(d, i) {  return  palette.paleryellow;  })
+  .attr("fill",         function(d, i) {  return  palette.gray;  })
   .attr("font-size",    function(d, i) {  return  (fontSizeNormal/scale)+'em'; })
   .attr("text-anchor",  function(d, i) { if
   (i>0) { return  "beginning"; }      else { return "end" } })
